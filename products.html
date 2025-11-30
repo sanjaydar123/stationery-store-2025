@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Stationery - Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <div class="logo-badge">CS</div>
+      <div>
+        <div class="logo-title">Campus Stationery</div>
+        <div class="logo-subtitle">Everything for your desk</div>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link active">Products</a>
+      <a href="orders.html" class="nav-link">Orders</a>
+      <a href="cart.html" class="nav-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      <a href="auth.html" class="nav-link">Login / Profile</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section-heading">
+      <h1>All Stationery Products</h1>
+      <p>Search and filter to find exactly what you need.</p>
+    </section>
+
+    <section class="filters">
+      <div class="field">
+        <label for="search-input">Search items</label>
+        <input type="search" id="search-input" placeholder="Search by name or description">
+      </div>
+      <div class="field">
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All Categories</option>
+          <option value="Notebooks">Notebooks</option>
+          <option value="Pens">Pens</option>
+          <option value="Art">Art & Craft</option>
+          <option value="Supplies">Supplies</option>
+          <option value="Electronics">Electronics</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="products-grid" id="products-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Campus Stationery. Built for students.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

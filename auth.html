@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Stationery - Login & Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <div class="logo-badge">CS</div>
+      <div>
+        <div class="logo-title">Campus Stationery</div>
+        <div class="logo-subtitle">Everything for your desk</div>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="orders.html" class="nav-link">Orders</a>
+      <a href="cart.html" class="nav-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      <a href="auth.html" class="nav-link active">Login / Profile</a>
+    </nav>
+  </header>
+
+  <main class="page page-auth">
+    <section class="auth-container">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-target="login-panel">Login</button>
+        <button class="auth-tab" data-target="signup-panel">Sign Up</button>
+        <button class="auth-tab" data-target="profile-panel">Profile</button>
+      </div>
+
+      <div class="auth-panel active" id="login-panel">
+        <h2>Student Login</h2>
+        <form id="login-form" class="form">
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn primary full">Login</button>
+          <p class="auth-note">Use your campus email for faster verification.</p>
+        </form>
+      </div>
+
+      <div class="auth-panel" id="signup-panel">
+        <h2>Create Student Account</h2>
+        <form id="signup-form" class="form">
+          <div class="field">
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" required>
+          </div>
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required>
+          </div>
+          <div class="field">
+            <label for="signup-mobile">Mobile Number</label>
+            <input type="tel" id="signup-mobile" required>
+          </div>
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required>
+          </div>
+          <button type="submit" class="btn primary full">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="auth-panel" id="profile-panel">
+        <h2>Profile Management</h2>
+        <p id="profile-status" class="profile-status"></p>
+        <form id="profile-form" class="form">
+          <div class="field">
+            <label for="profile-name">Name</label>
+            <input type="text" id="profile-name" required>
+          </div>
+          <div class="field">
+            <label for="profile-email">Email</label>
+            <input type="email" id="profile-email" required>
+          </div>
+          <div class="field">
+            <label for="profile-mobile">Mobile Number</label>
+            <input type="tel" id="profile-mobile" required>
+          </div>
+          <div class="field">
+            <label for="profile-password">Password</label>
+            <input type="password" id="profile-password" required>
+          </div>
+          <button type="submit" class="btn primary full">Save Changes</button>
+          <button type="button" id="logout-btn" class="btn ghost full">Logout</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Campus Stationery. Built for students By Sanjay.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

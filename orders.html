@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Stationery - Orders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <div class="logo-badge">CS</div>
+      <div>
+        <div class="logo-title">Campus Stationery</div>
+        <div class="logo-subtitle">Everything for your desk</div>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="orders.html" class="nav-link active">Orders</a>
+      <a href="cart.html" class="nav-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      <a href="auth.html" class="nav-link">Login / Profile</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section-heading">
+      <h1>Order History</h1>
+      <p>Track all your previous purchases and pay-later orders.</p>
+    </section>
+
+    <section id="orders-list" class="orders-list"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Campus Stationery. Built for students By Sanjay.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
