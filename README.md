@@ -11,30 +11,69 @@ Campus Stationery – Student Online Shopping Website
 **Batch:** C2  
 
 ---
+
 ## Project Description  
 Campus Stationery is a stationery shopping website made for students to easily purchase study materials like notebooks, pens, art tools and other supplies online.  
-The entire project is developed using **HTML, CSS and JavaScript only**
+The entire project is developed using **HTML, CSS and JavaScript only**, without using any frameworks or UI component libraries.
 
-The main objective of this website is to digitalize our regular stationery store inside the campus and make ordering quicker and easier for students. All the essential features such as login, cart management and order history are handled using **browser localStorage**.
+The website is created to digitalize the regular campus stationery shop and make ordering convenient for students. Login system, cart management and order history are all handled using **browser localStorage**.
 
 ### Main Features Included
-- Home page with shop details such as address, contact number, total orders and happy customers
-- Products page displaying all available stationery items with images, descriptions and prices
-- Search bar and category filter to find items quickly
-- Add to cart option for all items
-- Increase, decrease or remove items directly from the cart page
+- Home page with shop details such as address, contact number, total orders and happy customers count
+- Products page displaying all available items with images, descriptions and prices
+- Search bar and category filter for quick product browsing
+- Add to cart and quantity update options for each item
 - Two checkout methods:
-  - Buy Now (Instant Payment)
-  - Buy Now – Pay Later (Dues added)
-- Order History page that shows previously placed orders along with:
-  - Items chosen
-  - Date and time of order
-  - Mode of payment (Paid / Pay Later)
-- Student Login & Registration system
-- Profile section where users can update their name, email, mobile number and password
-- Responsive layout for proper viewing on both laptop and mobile screens
+  - Buy Now (Immediate Payment)
+  - Buy Now – Pay Later (Dues recorded)
+- Order History page showing previously purchased items with:
+  - Items and quantities
+  - Order time
+  - Payment status (Paid / Pay Later)
+- Student Login & Signup system
+- Profile management (update name, email, mobile number and password)
+- Proper responsive design for both desktops and mobile screens
 
 ---
 
-### 📁 Project Folder Structure
-The project consists of 5 pages 
+## Deployment Link (Working Live Website)
+Live Project URL:  
+🔗 https://sanjaydar123.github.io/stationery-store-2025/index.html  
+
+---
+
+### 📁 Project Folder Structure  
+The project consists of 5 pages and follows the standard web development folder setup:
+stationery-store-2025/
+│
+├── index.html          → Home Page
+├── products.html       → Products Listing Page
+├── cart.html           → View/Manage Cart Page
+├── orders.html         → Order History Page
+├── auth.html           → Login, Signup & Profile Page
+│
+├── css/
+│   └── style.css       → All design styles for the website
+│
+├── js/
+│   └── script.js       → Functionality for cart, login, orders, etc.
+│
+└── img/
+└── All stationery product images + theme asset
+
+
+
+### Technologies Used
+- HTML5  
+- CSS3  
+- JavaScript (LocalStorage based logic)
+- Google Fonts (Saira)
+
+---
+
+### How to Run
+1. Download/Clone the project folder  
+2. Open `index.html` in any browser  
+3. Navigate through pages using the menu bar  
+
+**Thank you!**
